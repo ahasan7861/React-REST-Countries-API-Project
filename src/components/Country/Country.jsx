@@ -2,7 +2,7 @@ import React from 'react';
 import './Country.css'
 
 const Country = (props) => {
-    console.log(props.country?.name.common)
+    // console.log(props.country?.name.common)
 
     // const {area} = props.country
     return (
@@ -10,9 +10,11 @@ const Country = (props) => {
             
 
             <h2>Country Name: {props.country?.name.common}</h2>
+            <img src={props.country?.flags.png} alt="" />
             <p>Population: {props.country?.population}</p>
             <p><small>Region: {props.country?.region}</small></p>
             <p>Area: {props.country?.area}</p>
+            
 
         </div>
     );
